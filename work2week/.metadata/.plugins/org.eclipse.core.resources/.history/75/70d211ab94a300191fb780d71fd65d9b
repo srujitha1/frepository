@@ -1,0 +1,20 @@
+package com;
+
+import java.io.File;
+
+public class Io3 {
+
+	public Io3() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File dir1 = new File("abc");
+		dir.mkdir();
+		File dir2 =new File(dir1,"xyz");
+		dir2.mkdir();
+
+	}
+
+}

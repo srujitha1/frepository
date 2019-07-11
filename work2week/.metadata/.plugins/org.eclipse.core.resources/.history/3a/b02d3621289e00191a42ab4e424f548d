@@ -1,0 +1,17 @@
+
+
+import com.sapient.pe.client.Person;
+import  com.sapient.pe.model.SavingsAccount;
+public class Current extends SavingsAccount{
+	
+private final double MIN_BALANCE=25000;
+	public Current(Person person) {
+		// TODO Auto-generated constructor stub
+		super(person,SavingsAccount.Account.CURRENT);
+	}
+
+
+	
+	
+
+}

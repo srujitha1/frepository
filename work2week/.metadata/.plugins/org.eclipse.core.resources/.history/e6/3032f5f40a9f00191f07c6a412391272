@@ -1,0 +1,24 @@
+package project1;
+
+import java.util.ArrayList;
+
+public class Assessment {
+
+	public static void main(String[] args) {
+		ArrayList<Dish> list=new ArrayList<>();
+		Dish dish;
+		dish = new Dish(5,"dosa",50.00,100);
+		list.add(dish);
+		dish= new Dish(2,"Idli vada",40.00,200);
+		list.add(dish);
+		dish= new Dish(4,"Roti Curry",100.00,250);
+		list.add(dish);
+		dish= new Dish(1,"Dosa",50.00,300);
+		list.add(dish);
+		dish= new Dish(3,"Pulav",80.00,330);
+		list.add(dish);
+		
+
+	}
+
+}

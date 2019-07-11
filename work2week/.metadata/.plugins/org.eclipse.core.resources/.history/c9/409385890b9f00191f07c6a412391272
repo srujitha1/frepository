@@ -1,0 +1,62 @@
+package project1;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Comparator;
+
+import java.lang.*;
+
+public class Assessment {
+
+	public static void main(String[] args) {
+		ArrayList<Dish> list=new ArrayList<>();
+		Dish dish;
+		dish = new Dish(5,"dosa",50.00,100);
+		list.add(dish);
+		dish= new Dish(2,"Idli vada",40.00,200);
+		list.add(dish);
+		dish= new Dish(4,"Roti Curry",100.00,250);
+		list.add(dish);
+		dish= new Dish(1,"Dosa",50.00,300);
+		list.add(dish);
+		dish= new Dish(3,"Pulav",80.00,330);
+		list.add(dish);
+		int option;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("1 => To sort the dishes in the increasing order of calories"+
+				   "2 => To sort the dishes in the decreasing order of calories"+
+				  " 3 => To sort the dishes in the increasing order of price"+
+				  " 4 => To sort the dishes in the decreasing order of price ");
+		option= sc.nextInt();
+		Comparator object;
+		switch(option)
+		{
+			case 1:
+			{
+				object=new ComparableClassa() ;
+				break;
+			}
+			case 2:
+			{
+				object=new ComparableClassd() ;
+				break;
+			}
+			case 3:
+			{
+				object=new ComparableClassap() ;
+				break;
+			}
+			case 4:
+			{
+				object=new ComparableClassdp() ;
+				break;
+			}
+			
+			
+		}
+
+	}
+
+
+}

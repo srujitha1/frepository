@@ -1,0 +1,49 @@
+package project;
+
+public class SavingsAccount {
+
+	private final long id;
+	private String name;
+	private double balance;
+	private static final double MIN_ACCOUNT_BALANCE=25000;
+	private static long count=100;
+	private Address address;
+	public SavingsAccount(String name,Address adress) {
+		this.name=name;
+		this.address=address;
+		id=++count;
+	}
+	
+	public void deposit(double amount)
+	{
+		this.balance+=amount;
+	}
+	public double withdraw(double amount)
+	{
+		if((balance-amount)>= MIN_ACCOUNT_BALANCE)
+		{
+		balance-=amount;
+		return amount;
+		}
+		else
+			System.out.println("insuffucient balance");
+		return 0;
+	}
+  public void checkBalance()
+  {
+	  System.out.println("balance is " + balance);
+  }
+public int getId() {
+	return id;
+}
+
+public String getName() {
+	return name;
+}
+
+public static int getCount() {
+	return count;
+}
+
+
+}

@@ -1,0 +1,23 @@
+import com.sapient.pe.model.SavingsAccount;
+import java.util.Comparator;
+
+ class ComparatorClass implements Comparator<SavingsAccount>{
+
+	
+	@Override
+	public int compare(SavingsAccount o1, SavingsAccount o2) {
+		// TODO Auto-generated method stub
+		return Long.valueOf(o2.getId()).compareTo(o1.getId());
+	}
+ }
+ class ComparatorClass2 implements Comparator<SavingsAccount>{
+
+		
+		@Override
+		public int compare(SavingsAccount o1, SavingsAccount o2) {
+			// TODO Auto-generated method stub
+			return o2.getPerson().getName().compareTo(o1.getPerson().getName());
+		}
+	 }
+		
+	

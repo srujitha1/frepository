@@ -1,0 +1,15 @@
+package com.pack.MockitoDemo;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestCalculation {
+	Calculator c1=null;
+	@Test
+	public void test()
+	{
+		assertTrue(3,c1.performCalculation(cs));
+	}
+
+}

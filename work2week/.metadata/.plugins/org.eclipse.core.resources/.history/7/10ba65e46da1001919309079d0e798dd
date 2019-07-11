@@ -1,0 +1,9 @@
+package com.pack.MockitoDemo;
+
+public class Calculator {
+	
+public int performCalculation(CalculatorService cs)
+{
+	return cs.add(1,2);
+}
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Analysis">
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <property name="context-root" value="Analysis"/>
+        <property name="java-output-path" value="/Analysis/build/classes"/>
+    </wb-module>
+</project-modules>

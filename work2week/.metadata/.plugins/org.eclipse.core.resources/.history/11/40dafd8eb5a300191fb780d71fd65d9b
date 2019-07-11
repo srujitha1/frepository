@@ -1,0 +1,13 @@
+package slf4jdemo;
+
+public class MyApp {
+
+	public Demo() {
+		
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+ package com.sapient.pe.model;
+import com.sapient.pe.client.Person;
+
+public class Salary extends SavingsAccount{
+	
+private final double MIN_BALANCE=0;
+	public Salary(Person person) {
+		// TODO Auto-generated constructor stub
+		super(person,SavingsAccount.Account.SALARY);
+	}
+
+	@Override
+	public void deposit(double amount) {
+		// TODO Auto-generated method stub
+		if(amount<=50000)
+		super.deposit(amount);
+		else
+			System.out.println("Cannot be deposited");
+	}
+
+	@Override
+	public double withdraw(double amount) {
+		// TODO Auto-generated method stub
+	
+		
+			if(balance-amount>=MIN_BALANCE)
+			{
+				return super.withdraw(amount);
+			}
+			else {
+				System.out.println("insufficient balance");
+			}
+		
+		return 0;
+	}
+	
+
+}

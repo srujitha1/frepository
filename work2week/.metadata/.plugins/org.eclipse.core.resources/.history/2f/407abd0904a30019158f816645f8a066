@@ -1,0 +1,9 @@
+package com;
+
+public class JavaBeansDemo {
+
+	public JavaBeansDemo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

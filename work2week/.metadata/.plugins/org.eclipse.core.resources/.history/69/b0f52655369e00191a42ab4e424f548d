@@ -1,0 +1,82 @@
+package com.sapient.pe.model;
+
+import com.sapient.pe.client.Person;
+import java.util.*;
+public class customer {
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		
+		SavingsAccount srujitha;
+		System.out.println("1.create an account 2. check account balance 3.deposit 4.withdraw");
+		System.out.println("enter one option");
+		int option = sc.nextInt();
+		
+		switch(option)
+		{
+		case 1:
+		{
+			
+			System.out.println("enter person name ");
+			String name=sc.nextLine();
+			System.out.println("enter person age ");
+			int age=sc.nextInt();
+			sc.nextLine();
+			System.out.println("enter person gender ");
+			String gender=sc.nextLine();
+			System.out.println("enter street");
+			String street=sc.nextLine();
+			Address address = new Address("x",street,"z");
+			Person person = new Person(name,age,gender,address);
+			System.out.println("enter account type 1.savings 2.current 3.salary");
+			int s;
+			s=sc.nextInt();
+			
+			switch(s)
+			{
+		
+			
+			case 1:
+				srujitha=new Savings(person);break;
+			case 2:
+				 srujitha=new Current(person);break;
+			case 3:
+				 srujitha=new Salary(person);break;
+			}
+		}break;
+		case 2:srujitha.checkBalance();break;
+		case 3:
+			{
+				double amount;
+				System.out.println("enter deposit amount");
+				amount=sc.nextDouble();
+			    
+				srujitha.deposit(amount);
+				break;
+			}
+		case 4:
+		{
+			double amount;
+			System.out.println("enter withdraw amount");
+			amount=sc.nextDouble();
+			srujitha.withdraw(amount);
+			break;
+
+		}
+		
+		}
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

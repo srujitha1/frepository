@@ -1,0 +1,26 @@
+package com.sapient.pe.model;
+
+import com.sapient.pe.client.Person;
+
+public class customer {
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Address address=new Address("x","y","z");
+		Person person=new Person("sruji",22,"f",address);
+		SavingsAccount srujitha = new SavingsAccount("sruji",person);
+		srujitha.deposit(500);
+		srujitha.withdraw(200);
+		srujitha.deposit(30000);
+		srujitha.withdraw(2400);
+		srujitha.checkBalance();
+		person=srujitha.getPerson();
+		System.out.println(person.address.getCity());
+		
+		
+
+	}
+
+}

@@ -1,0 +1,64 @@
+package com.sapient.pe.model;
+
+import com.sapient.pe.client.Person;
+
+public class SavingsAccount {
+	/////public enum Account{
+		//SAVINGS,
+		//CURRENT,
+		//SALARY;
+	//}
+	private final long id;
+	//Account account;
+	protected double balance;
+	
+	private static long count=100;
+	private final Person person;
+	public SavingsAccount(Person person) {
+		//this.account=account;
+		this.person=person;
+		id=++count;
+
+	}
+	public void createAccount()
+	{
+		System.out.println("1.Savings 2.current 3.salary");
+		
+		
+	}
+	
+	public void deposit(double amount)
+	{
+		this.balance+=amount;
+	}
+	public double withdraw(double amount)
+	{
+		
+		balance-=amount;
+		
+		
+		
+			
+		return 0;
+	}
+  public void checkBalance()
+  {
+	  System.out.println("balance is " + balance);
+  }
+public long getId() {
+	return id;
+}
+
+
+
+public static long getCount() {
+	return count;
+}
+
+public Person getPerson() {
+	return person;
+}
+
+
+
+}

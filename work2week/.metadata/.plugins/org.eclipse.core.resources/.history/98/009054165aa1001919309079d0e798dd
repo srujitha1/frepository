@@ -1,0 +1,21 @@
+package com.pack.LombokDemo;
+
+import lombok.Data;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+/*@Getter
+@Setter
+@ToString
+@RequiredArgsConstructor*/
+@Data
+
+public class Emp {
+
+private String name;
+private int age;
+private float salary;
+private String designation;
+
+}

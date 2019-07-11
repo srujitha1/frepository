@@ -1,0 +1,18 @@
+package project1;
+import java.util.Comparator;
+
+	
+
+	 class ComparableClass1 implements Comparator<Dish>{
+
+		
+		@Override
+		public int compare(Dish d1,Dish d2) {
+			// TODO Auto-generated method stub
+			return Integer.valueOf(d2.getId()).compareTo(d1.getId());
+		}
+	 
+
+		
+
+}

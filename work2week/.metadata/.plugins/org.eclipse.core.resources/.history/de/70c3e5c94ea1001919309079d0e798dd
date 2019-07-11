@@ -1,0 +1,10 @@
+package com.pack.LombokDemo;
+
+public class Emp {
+	@Getter
+private String name;
+private int age;
+private float salary;
+private String designation;
+
+}

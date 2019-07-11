@@ -1,0 +1,27 @@
+package com.sapient.pe.model;
+
+import com.sapient.pe.client.Person;
+import java.util.*;
+public class customer {
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter ")
+		SavingsAccount srujitha = new SavingsAccount(person);
+		srujitha.deposit(500);
+		srujitha.withdraw(200);
+		srujitha.deposit(30000);
+		srujitha.withdraw(2400);
+		srujitha.checkBalance();
+		person=srujitha.getPerson();
+		System.out.println(person.address.getCity());
+		
+		
+
+	}
+
+}

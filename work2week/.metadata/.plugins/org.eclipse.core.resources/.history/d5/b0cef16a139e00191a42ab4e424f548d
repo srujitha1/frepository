@@ -1,0 +1,20 @@
+package project;
+
+public class customer {
+
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Address address=new Address("x","y","z");
+		SavingsAccount srujitha = new SavingsAccount("sruji",address);
+		srujitha.deposit(500);
+		srujitha.withdraw(200);
+		srujitha.deposit(30000);
+		srujitha.withdraw(2400);
+		srujitha.checkBalance();
+		srujitha.getAddress();
+
+	}
+
+}

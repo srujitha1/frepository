@@ -1,0 +1,39 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+/**
+ * 
+ */
+
+/**
+ * @author srumudun
+ *
+ */
+public class Jdbc {
+
+	/**
+	 * 
+	 */
+	public Jdbc() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/Java","root","Sapient123");
+		Statement stmt = con.createStatement();
+		ResultSet rs=stmt.executeQuery("select * from EMP");
+		while(rs.next())
+		{
+			System.out.println("name :"+rs.getString(1));
+			System.out.println("age is"+rs.getInt(2));
+			
+		}
+
+	}
+
+}

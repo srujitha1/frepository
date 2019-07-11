@@ -1,0 +1,15 @@
+package project1;
+import java.util.Scanner;
+public class RestaurantClass {
+	public static void main(String args[])
+{
+		int d;
+		Scanner sc=new Scanner(System.in);
+	System.out.println("enter dish id");
+	d=sc.nextInt();
+	Dish id=new Dish(d);
+	
+	System.out.println("_______________ You have selected is"+id.getName() );
+
+}
+}
